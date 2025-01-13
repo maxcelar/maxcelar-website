@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
   <title>Max Čelar</title>
   <style>
     @font-face {
       font-family: 'Calibre';
       src: url('./fonts/Calibre-Regular.otf') format('opentype');
     }
-
-    @font-face {
-      font-family: 'Charter';
-      src: url('Charter.woff2') format('woff2'),
-          url('Charter.woff') format('woff');
-      font-weight: normal;
-      font-style: normal;
-      font-display: swap;
-  }
 
     /* --- Basic Reset --- */
     * {
@@ -28,13 +23,17 @@
 
     /* --- Body & Fonts --- */
     body {
-      font-family: 'Charter', Arial, sans-serif;
+      font-family: "Domine", serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
       background: #fafafa;
       color: #333;
       line-height: 1.5;
     }
 
-    h1, h2 {
+    h1,
+    h2 {
       font-family: 'Calibre', Arial, sans-serif;
     }
 
@@ -105,6 +104,7 @@
       text-decoration: none;
       font-weight: 600;
     }
+
     .links a:hover {
       text-decoration: underline;
     }
@@ -132,6 +132,7 @@
     }
   </style>
 </head>
+
 <body>
   <div class="container">
     <!-- Hero Image Section -->
@@ -145,9 +146,9 @@
     <div class="intro">
       <h1>Max Čelar
         <div class="social-icons">
-            <a href="mailto:max@untold.garden" rel="noopener" aria-label="Mail">
-                <img src="./mail.svg" alt="Mail" />
-              </a>
+          <a href="mailto:max@untold.garden" rel="noopener" aria-label="Mail">
+            <img src="./mail.svg" alt="Mail" />
+          </a>
           <a href="https://www.instagram.com/maxcelar" target="_blank" rel="noopener" aria-label="Instagram">
             <img src="./instagram.svg" alt="Instagram" />
           </a>
@@ -156,16 +157,17 @@
           </a>
         </div>
       </h1>
-      <p >
+      <p>
         Artist | Designer | Technologist
         <br />
         <br />
         Co-founder of:
-        <ul>
-          <li><a href="https://untold.garden/" target="_blank">Untold Garden</a> - Art, design & research collective</li>
-          <li><a href="https://untold.systems/" target="_blank">Untold Systems</a> - Creative technology studio</li>
-          <li><a href="https://meadow.space/" target="_blank">Meadow</a> - Social platform for building, publishing & distributing immersive content</li>
-        </ul>
+      <ul>
+        <li><a href="https://untold.garden/" target="_blank">Untold Garden</a> - Art, design & research collective</li>
+        <li><a href="https://untold.systems/" target="_blank">Untold Systems</a> - Creative technology studio</li>
+        <li><a href="https://meadow.space/" target="_blank">Meadow</a> - Social platform for building, publishing &
+          distributing immersive content</li>
+      </ul>
       </p>
     </div>
 
@@ -174,16 +176,30 @@
     <div class="bio">
       <h2>Biography</h2>
       <p>
-        Max Čelar is an artist, creative technologist, software engineer and entrepreneur based in London. Born in Ljubljana, Slovenia, he began his artistic journey at the High School of Fine Arts. In 2013, he moved to London to study architecture at the Architectural Association, where he continued his keen interest in decentralised decision-making in architecture and urban planning, as well as the impact of immersive and AI technologies on urban environments.
+        Max Čelar is an artist, designer and technologist based in London. Born in Ljubljana, Slovenia, he began his
+        artistic journey at the High School of Fine Arts. In 2013, he moved to London to study architecture at the
+        Architectural Association, where he continued his keen interest in decentralised decision-making in architecture
+        and urban planning, as well as the impact of immersive and AI technologies on urban environments.
         <br />
         <br />
-        Following his studies, Max worked as an XR Designer & Developer at ScanLAB Projects, contributing to innovative immersive experiences and projects funded by Innovate UK, including the renowned Framerate project. His expertise in immersive technologies led him to roles as a visiting lecturer at the Royal College of Art and Royal Holloway University, where he taught courses on Immersive Environment Design and Virtual Reality Development.
+        Following his studies, Max worked as an XR Designer & Developer at ScanLAB Projects, contributing to innovative
+        immersive experiences and projects funded by Innovate UK, including the renowned Framerate project. His
+        expertise in immersive technologies led him to roles as a visiting lecturer at the Royal College of Art and
+        Royal Holloway University, where he taught courses on Immersive Environment Design and Virtual Reality
+        Development.
         <br />
         <br />
-        In 2021, Max co-founded Untold Garden, an art and design practice dedicated to creating participatory experiences through technology. Untold Garden focuses on audience-centered projects that foster new types of social interactions, prioritising the engagement and involvement of the audience over traditional artist-centered approaches.
+        In 2021, Max co-founded Untold Garden, an art and design practice dedicated to creating participatory
+        experiences through technology. Untold Garden focuses on audience-centered projects that foster new types of
+        social interactions, prioritising the engagement and involvement of the audience over traditional
+        artist-centered approaches.
         <br />
         <br />
-        Max Čelar’s work seamlessly integrates technology and art, pushing the boundaries of how we interact with and experience our environments. His diverse background in architecture, immersive technology, and participatory art positions him as a leading figure in the intersection of art, technology, and urban design. Max continues to explore innovative ways to enhance human experiences and interactions through his work at Untold Garden, making contributions to the fields of immersive technology and creative design.
+        Max Čelar’s work seamlessly integrates technology and art, pushing the boundaries of how we interact with and
+        experience our environments. His diverse background in architecture, immersive technology, and participatory art
+        positions him as a leading figure in the intersection of art, technology, and urban design. Max continues to
+        explore innovative ways to enhance human experiences and interactions through his work at Untold Garden, making
+        contributions to the fields of immersive technology and creative design.
       </p>
     </div>
   </div>
@@ -198,4 +214,5 @@
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
+
 </html>
