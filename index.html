@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Max Čelar</title>
+  <style>
+    /* --- Basic Reset --- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* --- Body & Fonts --- */
+    body {
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    /* --- Container --- */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* --- Hero Image --- */
+    .hero {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .hero img {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-radius: 6px;
+    }
+
+    /* --- Social Media Icons --- */
+    .social-icons {
+      float: right;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+
+    .social-icons a {
+      margin: 0 5px;
+      display: inline-block;
+    }
+
+    .social-icons img {
+      width: 24px;
+      height: 24px;
+    }
+
+    /* --- Intro Section --- */
+    .intro {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .intro h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .intro p {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    /* --- Links --- */
+    .links {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .links a {
+      margin: 0 10px;
+      color: #0077b6;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    /* --- Bio Section --- */
+    .bio {
+      margin-bottom: 40px;
+    }
+
+    .bio h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+
+    .bio p {
+      margin-bottom: 15px;
+    }
+
+    /* --- Footer (optional) --- */
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Hero Image Section -->
+    <div class="hero">
+      <!-- Replace this image URL with your own -->
+      <img src="./profile.jpg" alt="Max Čelar" />
+
+    </div>
+
+    <!-- Introduction & Short Description -->
+    <div class="intro">
+      <h1>Max Čelar
+        <div class="social-icons">
+            <a href="mailto:max@untold.garden" rel="noopener" aria-label="Mail">
+                <img src="./mail.svg" alt="Mail" />
+              </a>
+          <a href="https://www.instagram.com/maxcelar" target="_blank" rel="noopener" aria-label="Instagram">
+            <img src="./instagram.svg" alt="Instagram" />
+          </a>
+          <a href="https://www.linkedin.com/in/maxcelar" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <img src="./linkedin.svg" alt="LinkedIn" />
+          </a>
+        </div>
+      </h1>
+      <p >
+        Artist | Designer | Technologist
+        <br />
+        <br />
+        Co-founder of:
+        <ul>
+          <li><a href="https://untold.garden/" target="_blank">Untold Garden</a> - Art, design & research collective</li>
+          <li><a href="https://untold.systems/" target="_blank">Untold Systems</a> - Creative technology studio</li>
+          <li><a href="https://meadow.space/" target="_blank">Meadow</a> - Social platform for building, publishing & distributing immersive content</li>
+        </ul>
+      </p>
+    </div>
+
+
+    <!-- Biography -->
+    <div class="bio">
+      <h2>Biography</h2>
+      <p>
+        Max Čelar is an artist, creative technologist, software engineer and entrepreneur based in London. Born in Ljubljana, Slovenia, he began his artistic journey at the High School of Fine Arts. In 2013, he moved to London to study architecture at the Architectural Association, where he continued his keen interest in decentralised decision-making in architecture and urban planning, as well as the impact of immersive and AI technologies on urban environments.
+        <br />
+        <br />
+        Following his studies, Max worked as an XR Designer & Developer at ScanLAB Projects, contributing to innovative immersive experiences and projects funded by Innovate UK, including the renowned Framerate project. His expertise in immersive technologies led him to roles as a visiting lecturer at the Royal College of Art and Royal Holloway University, where he taught courses on Immersive Environment Design and Virtual Reality Development.
+        <br />
+        <br />
+        In 2021, Max co-founded Untold Garden, an art and design practice dedicated to creating participatory experiences through technology. Untold Garden focuses on audience-centered projects that foster new types of social interactions, prioritising the engagement and involvement of the audience over traditional artist-centered approaches.
+        <br />
+        <br />
+        Max Čelar’s work seamlessly integrates technology and art, pushing the boundaries of how we interact with and experience our environments. His diverse background in architecture, immersive technology, and participatory art positions him as a leading figure in the intersection of art, technology, and urban design. Max continues to explore innovative ways to enhance human experiences and interactions through his work at Untold Garden, making contributions to the fields of immersive technology and creative design.
+      </p>
+    </div>
+  </div>
+
+  <!-- Footer (optional) -->
+  <footer>
+    &copy; <span id="year"></span> Max Čelar
+  </footer>
+
+  <script>
+    // Auto-update footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
